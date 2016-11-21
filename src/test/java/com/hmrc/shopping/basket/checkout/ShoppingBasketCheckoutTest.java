@@ -17,7 +17,7 @@ public class ShoppingBasketCheckoutTest {
 
 		List<String> basket = Arrays.asList();
 		ShoppingPriceCalculator calc = new ShoppingPriceCalculator(basket);
-		assertEquals(BlockingObservable.from(calc.totalActualPrice()).last(), is(0.0));
+		assertEquals(BlockingObservable.from(calc.totalActualPrice()).last(), Double.valueOf(0.0));
 	}
 
 }
