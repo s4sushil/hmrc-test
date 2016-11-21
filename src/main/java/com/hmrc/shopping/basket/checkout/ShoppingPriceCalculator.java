@@ -6,6 +6,12 @@ import com.hmrc.shoppping.model.ItemEnum;
 
 import rx.Observable;
 
+/**
+ * Calculates price of item in the Basket.
+ * 
+ * @author sushil.a.choudhary
+ *
+ */
 public class ShoppingPriceCalculator {
 
 	private Observable<String> basketObservable;
